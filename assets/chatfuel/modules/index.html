@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app='chatfuel'>
+    <head>
+        <base href="/">
+        <meta charset="UTF-8">
+        <title>ChatFuel - sample bots</title>
+        <link rel="shortcut icon" href="/src/img/base/favicon.png">
+
+        <!-- Утилиты адаптивности страницы -->
+        <meta name='viewport' content='width=device-width,initial-scale=1'/>
+
+        <!-- Подключение стилей -->
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Подключение скриптов -->
+        <script src="/src/js/vendor.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/templates.js"></script>
+    </head>
+
+    <body ng-controller="appController">
+        <div id="wrap">
+
+            <!-- Подключение HEADER -->
+            @@include('../modules/header/header.html')
+
+            <!-- Тело контента -->
+            <ng-view autoscroll="true"></ng-view>
+        </div>
+    </body>
+</html>

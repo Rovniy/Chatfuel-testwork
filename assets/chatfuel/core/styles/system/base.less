@@ -1,0 +1,52 @@
+html {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+  min-height: 100%;
+  display: block;
+  position: relative;
+  overflow-x: hidden;
+  body {
+    font: 14px/16px @f-main;
+    min-height: 100%;
+    background: url(/src/img/bg.jpg) center center no-repeat;
+    background-size: cover;
+    #wrap {
+      overflow-x: hidden;
+      a {
+        &:hover, &:focus, &:active {
+          outline: none!important
+        }
+      }
+    }
+  }
+}
+
+// Ориентация по сторонам
+.align-center {
+  text-align: center;
+}
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+
+.form-control {
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.15);
+  box-shadow: none;
+  &:focus {
+    box-shadow: none;
+    border-color: #4db1a7;
+    background: rgba(0,0,0,.15);
+  }
+  &:disabled {
+    color: #333!important;
+    background-color: rgba(0,0,0,.15);
+  }
+}

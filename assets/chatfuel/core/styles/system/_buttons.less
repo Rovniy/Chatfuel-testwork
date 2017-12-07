@@ -1,0 +1,38 @@
+.button-wrapper {
+  margin: 5px 0;
+  .btn {
+    font-family: @f-main;
+    text-align: center;
+    user-select: none;
+    border: 1px solid #90b900;
+    -webkit-transition: all .1s ease;
+    transition: all .1s ease;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.35);
+    text-decoration: none;
+    color: #fff;
+    min-width: 100px;
+    background: #90b900;
+    &:hover {
+      background: #90b900;
+      border-color: #78a100;
+      transform: scale(1.2);
+      min-width: 100px;
+      color: #fff;
+      text-decoration: none;
+    }
+    &:focus {
+      outline: none;
+    }
+    &.btn-danger {
+      background: #e85656;
+      border-color: #e85656;
+    }
+    &.btn-warning {
+      background: #dfb81c;
+      border-color: #c7a004;
+    }
+  }
+  .btn-raised {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.35);
+  }
+}
