@@ -30,5 +30,7 @@
       "name": "Egor",
       "avatarUrl": "/src/img/avatars/avatar_3.png"
     }
-  ]
+  ],
+  "nextPageUrl": "/src/json/user2.json",
+  "previousPageUrl": ""
 }

@@ -1,0 +1,36 @@
+{
+  "result": [
+    {
+      "id": 13,
+      "name": "Lesya",
+      "avatarUrl": "/src/img/avatars/avatar_3.png"
+    },
+    {
+      "id": 14,
+      "name": "Petya",
+      "avatarUrl": "/src/img/avatars/avatar_2.png"
+    },
+    {
+      "id": 15,
+      "name": "Natasha",
+      "avatarUrl": "/src/img/avatars/avatar_1.png"
+    },
+    {
+      "id": 16,
+      "name": "Olga",
+      "avatarUrl": "/src/img/avatars/avatar_3.png"
+    },
+    {
+      "id": 17,
+      "name": "Kirill",
+      "avatarUrl": "/src/img/avatars/avatar_2.png"
+    },
+    {
+      "id": 18,
+      "name": "Vitya",
+      "avatarUrl": "/src/img/avatars/avatar_1.png"
+    }
+  ],
+  "nextPageUrl": "",
+  "previousPageUrl": "/src/json/user2.json"
+}

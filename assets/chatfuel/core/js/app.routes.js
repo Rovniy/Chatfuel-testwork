@@ -16,7 +16,7 @@
                 controllerAs: 'vm'
             })
             //Страница редактирования пользователя
-            .when ('/edit/:id', {
+            .when ('/edit/:id/:page', {
                 templateUrl: '/user-edit/edit.html',
                 controller: 'userEditController',
                 controllerAs: 'vm'

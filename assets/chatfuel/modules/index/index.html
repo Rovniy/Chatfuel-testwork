@@ -11,6 +11,7 @@
                     <table class="table">
                         <thead>
                             <tr>
+                                <th class="align-left">id</th>
                                 <th class="align-left">Аватар</th>
                                 <th class="align-left">Имя пользователя</th>
                                 <th class="align-center">Действия</th>
@@ -20,10 +21,13 @@
                         <!-- ngRepeat: row in vm.users -->
                         <tr ng-repeat="row in vm.users | filter: vm.userSearch | orderBy: row.id track by $index">
                             <td class="align-left">
-                                <img ng-src="{{::row.avatarUrl}}"/>
+                                {{row.id}}
                             </td>
                             <td class="align-left">
-                                {{::row.name}}
+                                <img ng-src="{{row.avatarUrl}}"/>
+                            </td>
+                            <td class="align-left">
+                                {{row.name}}
                             </td>
                             <td class="align-center">
                                 <div class="button-wrapper">
@@ -34,6 +38,12 @@
                         <!-- end ngRepeat: row in vm.users -->
                         </tbody>
                     </table>
+                </div>
+                <div class="pagination">
+                    <div class="btn-group">
+                        <button class="btn btn-success" ng-disabled="!vm.prev" ng-click="vm.editPage('-1')">Назад</button>
+                        <button class="btn btn-success" ng-disabled="!vm.next" ng-click="vm.editPage('1')">Вперед</button>
+                    </div>
                 </div>
             </div>
         </div>

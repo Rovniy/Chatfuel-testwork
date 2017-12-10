@@ -17,13 +17,16 @@
                         </div>
                         <div class="form-group">
                             <div class="button-wrapper" ng-if="vm.disabled">
-                                <button type="button" class="btn btn-xs" ng-click="vm.editName()">Редактировать</button>
+                                <button type="button" class="btn btn-xs" ng-click="vm.editName('click')">Редактировать</button>
                             </div>
                             <div class="button-wrapper" ng-if="!vm.disabled">
                                 <button type="button" class="btn btn-danger btn-xs" ng-click="vm.saveChanges(vm.user)">Сохранить</button>
                             </div>
                         </div>
                     </form>
+                </div>
+                <div class="text-center" ng-if="vm.ok">
+                    <h4>Данные пользователя успешно сохранены!</h4>
                 </div>
                 <div ng-if="!vm.user">
                     <i class="fa fa-3x fa-circle-o-notch fa-spin color-red"></i>
